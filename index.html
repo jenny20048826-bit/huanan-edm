@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>華南銀行 - 時空旅人的任務 EDM</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #2c1a4d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        .edm-wrapper {
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+            line-height: 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .edm-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 互動式按鈕點擊熱區 */
+        .cta-hotspot {
+            position: absolute;
+            display: block;
+            left: 17%;
+            bottom: 3.2%;
+            width: 66%;
+            height: 5%;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.001);
+            z-index: 10;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .cta-hotspot:hover {
+            box-shadow: 0 0 18px rgba(255, 221, 89, 0.6);
+            transform: scale(1.02);
+        }
+
+        .cta-hotspot:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+<div class="edm-wrapper">
+    <!-- EDM 完整主圖 -->
+    <img src="EDM.png" alt="時空旅人的任務 EDM" class="edm-image">
+
+    <!-- 底部互動式按鈕連結 -->
+    <a href="https://jenny20048826-bit.github.io/huanan-scenario/" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="cta-hotspot" 
+       title="點擊進入冒險闖關吧！">
+    </a>
+</div>
+
+</body>
+</html>
