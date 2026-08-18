@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>華南銀行 - 時空旅人的任務 EDM</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #2c1a4d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        /* 設定寬度最大 700px，高度依圖片比例自適應延展 (700*不限) */
+        .edm-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            line-height: 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .edm-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 故事框下方「點擊進入冒險闖關吧！」按鈕熱區 */
+        .cta-hotspot {
+            position: absolute;
+            display: block;
+            left: 48.5%;
+            top: 55.4%;
+            width: 44.5%;
+            height: 4.8%;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.001);
+            z-index: 10;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .cta-hotspot:hover {
+            box-shadow: 0 0 20px rgba(255, 221, 89, 0.7);
+            transform: scale(1.02);
+        }
+
+        .cta-hotspot:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+<div class="edm-wrapper">
+    <!-- 新版 EDM 圖片 -->
+    <img src="EDM_2.png" alt="時空旅人的任務 EDM" class="edm-image">
+
+    <!-- 故事下方「點擊進入冒險闖關吧！」互動按鈕 -->
+    <a href="https://jenny20048826-bit.github.io/huanan-scenario/" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="cta-hotspot" 
+       title="點擊進入冒險闖關吧！">
+    </a>
+</div>
+
+</body>
+</html>
